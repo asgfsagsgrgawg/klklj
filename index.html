@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abrico Realty — Accra, Ghana</title>
+  <meta name="description" content="Luxury real estate, relocation and curated stays in Accra, Ghana. Bilingual FR/EN service for Francophone West Africans." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <a href="#" class="nav-brand">
+        <!-- INSERT YOUR LOGO: place your PNG file in the same folder and update the src path below -->
+        <img src="images/Abrico Realty.png" alt="Abrico Realty" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero"           class="nav-link active" data-en="Home"           data-fr="Accueil">Home</a></li>
+        <li><a href="#accra-guide"    class="nav-link"        data-en="Accra Guide"    data-fr="Guide Accra">Accra Guide</a></li>
+        <li><a href="#services"       class="nav-link"        data-en="Services"       data-fr="Services">Services</a></li>
+        <li><a href="#neighbourhoods" class="nav-link"        data-en="Neighbourhoods" data-fr="Quartiers">Neighbourhoods</a></li>
+        <li><a href="#about"          class="nav-link"        data-en="About"          data-fr="À Propos">About</a></li>
+        <li><a href="#contact"        class="nav-link"        data-en="Contact"        data-fr="Contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta" data-en="Book a Free Call" data-fr="Appel Gratuit">Book a Free Call</a>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#hero"           data-en="Home"           data-fr="Accueil">Home</a></li>
+        <li><a href="#accra-guide"    data-en="Accra Guide"    data-fr="Guide Accra">Accra Guide</a></li>
+        <li><a href="#services"       data-en="Services"       data-fr="Services">Services</a></li>
+        <li><a href="#neighbourhoods" data-en="Neighbourhoods" data-fr="Quartiers">Neighbourhoods</a></li>
+        <li><a href="#about"          data-en="About"          data-fr="À Propos">About</a></li>
+        <li><a href="#contact"        data-en="Contact"        data-fr="Contact">Contact</a></li>
+        <li><a href="#contact" class="mobile-cta" data-en="Book a Free Call" data-fr="Appel Gratuit">Book a Free Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO — CINEMATIC SLIDER
+  ============================================================ -->
+  <section class="hero" id="hero">
+
+    <!-- Slides -->
+    <div class="hero-track" id="heroTrack">
+
+      <div class="hero-slide active" id="slide-0">
+        <!--
+          TO USE YOUR OWN IMAGE:
+          Replace the .slide-visual div below with:
+          <img src="images/hero-1.jpg" alt="Accra skyline" class="slide-bg-img" />
+        -->
+        <img src="images/city.jpg" alt="Accra skyline" class="slide-bg-img" />
+        <div class="slide-grain"></div>
+        <div class="slide-vignette"></div>
+      </div>
+
+      <div class="hero-slide" id="slide-1">
+        <img src="images/accra.jpeg" alt="Accra skyline" class="slide-bg-img" />
+        <div class="slide-grain"></div>
+        <div class="slide-vignette"></div>
+      </div>
+
+      <div class="hero-slide" id="slide-2">
+        <img src="images/smile relocate.jpg" alt="Accra skyline" class="slide-bg-img" />
+        <div class="slide-grain"></div>
+        <div class="slide-vignette"></div>
+      </div>
+
+      <div class="hero-slide" id="slide-3">
+        <img src="images/relocate.jpg" alt="Accra skyline" class="slide-bg-img" />
+        <div class="slide-grain"></div>
+        <div class="slide-vignette"></div>
+      </div>
+
+    </div>
+
+    <!-- Persistent hero content — text changes per slide via JS -->
+    <div class="hero-content">
+
+      <!-- Left vertical rule with slide counter -->
+      <div class="hero-side-rule">
+        <div class="slide-counter">
+          <span class="slide-current">01</span>
+          <span class="slide-sep"></span>
+          <span class="slide-total">04</span>
+        </div>
+        <div class="side-rule-line"></div>
+        <div class="hero-location">
+          <span>Accra</span>
+          <span class="dot-sep">·</span>
+          <span>Ghana</span>
+        </div>
+      </div>
+
+      <!-- Main headline block -->
+      <div class="hero-text-block">
+        <div class="hero-eyebrow" id="heroEyebrow">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text" data-en="West Africa's Premier Destination" data-fr="La Première Destination d'Afrique de l'Ouest">West Africa's Premier Destination</span>
+        </div>
+
+        <h1 class="hero-headline" id="heroHeadline">
+          <span class="line-wrap"><em class="line-reveal" data-en="Live, Invest" data-fr="Vivez, Investissez">Live, Invest</em></span>
+          <span class="line-wrap"><strong class="line-reveal accent-line" data-en="& Thrive in Ghana." data-fr="& Prospérez au Ghana.">&amp; Thrive in Ghana.</strong></span>
+        </h1>
+
+        <p class="hero-sub" id="heroSub" data-en="Bilingual real estate, relocation &amp; curated stays for Francophones ready to discover West Africa's most dynamic city." data-fr="Immobilier bilingue, relocalisation et séjours sur mesure pour les francophones prêts à découvrir la ville la plus dynamique d'Afrique de l'Ouest.">
+          Bilingual real estate, relocation &amp; curated stays for Francophones ready to discover West Africa's most dynamic city.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#services" class="hero-btn-primary">
+            <span data-en="Explore Services" data-fr="Nos Services">Explore Services</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#accra-guide" class="hero-btn-ghost">
+            <span data-en="Discover Accra" data-fr="Découvrir Accra">Discover Accra</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide thumbnails / nav -->
+      <div class="hero-slide-nav">
+        <button class="slide-thumb active" data-index="0" aria-label="Slide 1">
+          <div class="thumb-visual tv1"></div>
+          <div class="thumb-overlay"></div>
+          <span class="thumb-label" data-en="Invest" data-fr="Investir">Invest</span>
+        </button>
+        <button class="slide-thumb" data-index="1" aria-label="Slide 2">
+          <div class="thumb-visual tv2"></div>
+          <div class="thumb-overlay"></div>
+          <span class="thumb-label" data-en="Live" data-fr="Vivre">Live</span>
+        </button>
+        <button class="slide-thumb" data-index="2" aria-label="Slide 3">
+          <div class="thumb-visual tv3"></div>
+          <div class="thumb-overlay"></div>
+          <span class="thumb-label" data-en="Relocate" data-fr="Déménager">Relocate</span>
+        </button>
+        <button class="slide-thumb" data-index="3" aria-label="Slide 4">
+          <div class="thumb-visual tv4"></div>
+          <div class="thumb-overlay"></div>
+          <span class="thumb-label" data-en="Discover" data-fr="Découvrir">Discover</span>
+        </button>
+        <div class="slide-progress-track">
+          <div class="slide-progress-bar" id="slideProgressBar"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Prev / Next -->
+    <button class="hero-arrow prev" id="heroPrev" aria-label="Previous">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="hero-arrow next" id="heroNext" aria-label="Next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+  </section><!-- /hero -->
+
+
+  <!-- ============================================================
+       ABOUT CAROLE — immediately after hero
+  ============================================================ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-layout">
+
+        <div class="about-visual reveal">
+          <div class="about-img-frame">
+            <img src="images/Good-1.jpg" alt="Carole K. — Founder of Abrico Realty" />
+            <!-- <div class="img-ph ph-teal-dark about-tall"></div> -->
+            <div class="about-frame-accent"></div>
+          </div>
+          <div class="about-pull-quote">
+            <div class="pq-mark">&ldquo;</div>
+            <p data-en="Accra is not a city you visit. It is a city you live, you feel." data-fr="Accra n'est pas une ville qu'on visite. C'est une ville qu'on vit, qu'on ressent.">Accra is not a city you visit. It is a city you live, you feel.</p>
+            <div class="pq-attribution">— Carole K., <span data-en="Founder" data-fr="Fondatrice">Founder</span></div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <div class="section-overline" data-en="Meet Your Expert" data-fr="Rencontrez Votre Experte">Meet Your Expert</div>
+          <h2 data-en="Carole K." data-fr="Carole K.">Carole K.</h2>
+          <div class="about-role" data-en="Founder, Abrico Realty" data-fr="Fondatrice, Abrico Realty">Founder, Abrico Realty</div>
+
+          <p data-en="My name is Carole. Ivorian, based in Accra for nearly 10 years. When I arrived here, I had many questions and very few concrete answers. This is what I wish I had from day one." data-fr="Je m'appelle Carole. Ivoirienne, basée à Accra depuis presque 10 ans. Quand je suis arrivée ici, j'avais beaucoup de questions et peu de réponses concrètes. Ce document, c'est ce que j'aurais voulu avoir dès le premier jour.">My name is Carole. Ivorian, based in Accra for nearly 10 years. When I arrived here, I had many questions and very few concrete answers. This is what I wish I had from day one.</p>
+
+          <p data-en="Accra is not the city you imagine from Abidjan, Dakar or Cotonou. It is more structured than people think, more accessible than people say, and full of opportunities that many Francophones have not yet discovered." data-fr="Accra n'est pas la ville qu'on imagine depuis Abidjan, Dakar ou Cotonou. Elle est plus structurée qu'on ne le croit, plus accessible qu'on ne le dit, et pleine d'opportunités que beaucoup de francophones n'ont pas encore vues.">Accra is not the city you imagine from Abidjan, Dakar or Cotonou. It is more structured than people think, more accessible than people say, and full of opportunities that many Francophones have not yet discovered.</p>
+
+          <p data-en="What I offer is not a tourist brochure. It is an honest introduction — the neighbourhoods, the costs, the security, the schools, the practical things. Unfiltered, straight talk." data-fr="Ce que vous tenez entre les mains n'est pas une brochure touristique. C'est une introduction honnête : les quartiers, les coûts, la sécurité, les écoles, les choses pratiques. Sans filtre, sans langue de bois.">What I offer is not a tourist brochure. It is an honest introduction — the neighbourhoods, the costs, the security, the schools, the practical things. Unfiltered, straight talk.</p>
+
+          <div class="about-metrics">
+            <div class="am-item">
+              <div class="am-val">10+</div>
+              <div class="am-label" data-en="Years in Accra" data-fr="Années à Accra">Years in Accra</div>
+            </div>
+            <div class="am-div"></div>
+            <div class="am-item">
+              <div class="am-val">200+</div>
+              <div class="am-label" data-en="Clients Helped" data-fr="Clients Accompagnés">Clients Helped</div>
+            </div>
+            <div class="am-div"></div>
+            <div class="am-item">
+              <div class="am-val">FR/EN</div>
+              <div class="am-label" data-en="Bilingual Service" data-fr="Service Bilingue">Bilingual Service</div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary" data-en="Work With Carole" data-fr="Travailler avec Carole">Work With Carole</a>
+            <a href="https://www.linkedin.com/in/carole-k-abricorealty-realestateexpert" target="_blank" class="btn-outline" data-en="LinkedIn Profile" data-fr="Profil LinkedIn">LinkedIn Profile</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STATS SECTION — standalone, after About Carole
+  ============================================================ -->
+  <section class="stats-section" id="stats">
+    <div class="stats-inner">
+      <div class="stats-item">
+        <span class="stats-num"><span class="stat-count" data-target="200">0</span>+</span>
+        <span class="stats-label" data-en="Clients Served" data-fr="Clients Servis">Clients Served</span>
+      </div>
+      <div class="stats-rule"></div>
+      <div class="stats-item">
+        <span class="stats-num"><span class="stat-count" data-target="10">0</span>+</span>
+        <span class="stats-label" data-en="Years in Accra" data-fr="Années à Accra">Years in Accra</span>
+      </div>
+      <div class="stats-rule"></div>
+      <div class="stats-item">
+        <span class="stats-num"><span class="stat-count" data-target="12">0</span>%</span>
+        <span class="stats-label" data-en="Max Rental Yield" data-fr="Rendement Max">Max Rental Yield</span>
+      </div>
+      <div class="stats-rule"></div>
+      <div class="stats-item">
+        <span class="stats-num"><span class="stat-count" data-target="45">0</span>min</span>
+        <span class="stats-label" data-en="From Abidjan" data-fr="Depuis Abidjan">From Abidjan</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY ACCRA
+  ============================================================ -->
+  <section class="section why-section" id="accra-guide">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-overline" data-en="Why Ghana" data-fr="Pourquoi le Ghana">Why Ghana</div>
+        <h2 data-en="Accra — Africa's Most Exciting City" data-fr="Accra — La Ville la Plus Excitante d'Afrique">Accra — Africa's Most Exciting City</h2>
+        <p class="section-intro" data-en="Accra is not the city you imagine from Abidjan, Dakar or Cotonou. It is more structured, more accessible, and full of opportunities that most Francophones have not yet discovered." data-fr="Accra n'est pas la ville qu'on imagine depuis Abidjan, Dakar ou Cotonou. Elle est plus structurée, plus accessible, et pleine d'opportunités que beaucoup de francophones n'ont pas encore vues.">Accra is not the city you imagine from Abidjan, Dakar or Cotonou. It is more structured, more accessible, and full of opportunities that most Francophones have not yet discovered.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-img">
+            <img src="images/safe.jpg" alt="Safety in Accra" /> 
+            <div class="img-ph ph-teal-dark"></div>
+          </div>
+          <div class="why-body">
+            <div class="why-num">01</div>
+            <h3 data-en="Safest in West Africa" data-fr="Le Plus Sûr en Afrique de l'Ouest">Safest in West Africa</h3>
+            <p data-en="Ghana is one of the most politically stable and secure countries on the continent. Residential areas like East Legon, Labone and Cantonments are exceptionally peaceful." data-fr="Le Ghana est l'un des pays les plus stables et les plus sûrs du continent. Les quartiers résidentiels comme East Legon, Labone et Cantonments sont exceptionnellement paisibles.">Ghana is one of the most politically stable and secure countries on the continent. Residential areas like East Legon, Labone and Cantonments are exceptionally peaceful.</p>
+          </div>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-img">
+            <img src="images/invest.jpg" alt="Investment returns" />
+            <div class="img-ph ph-orange"></div>
+          </div>
+          <div class="why-body">
+            <div class="why-num">02</div>
+            <h3 data-en="Strong Investment Returns" data-fr="Rendements Solides">Strong Investment Returns</h3>
+            <p data-en="Gross rental yields of 8 to 12% in well-chosen zones. Expat rental demand is strong and constant. The market welcomes foreign investors with a transparent legal framework." data-fr="Rendements locatifs bruts de 8 à 12% dans les zones bien choisies. La demande locative expatriée est forte et constante. Le marché accueille les investisseurs étrangers.">Gross rental yields of 8 to 12% in well-chosen zones. Expat rental demand is strong and constant. The market welcomes foreign investors with a transparent legal framework.</p>
+          </div>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-img">
+            <img src="images/school.jpg" alt="International schools" />
+            <div class="img-ph ph-navy"></div>
+          </div>
+          <div class="why-body">
+            <div class="why-num">03</div>
+            <h3 data-en="World-Class Schools" data-fr="Écoles de Classe Mondiale">World-Class Schools</h3>
+            <p data-en="International schools for every curriculum — Lycée Français d'Accra, Lincoln Community School (American/IB), British International School and more. Your children will not be lost here." data-fr="Écoles internationales pour chaque programme — Lycée Français d'Accra, Lincoln Community School (américain/IB), British International School et plus. Vos enfants ne seront pas perdus ici.">International schools for every curriculum — Lycée Français d'Accra, Lincoln Community School (American/IB), British International School and more. Your children will not be lost here.</p>
+          </div>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-img">
+            <img src="images/cult.jpg" alt="Accra gastronomy" />
+            <div class="img-ph ph-teal"></div>
+          </div>
+          <div class="why-body">
+            <div class="why-num">04</div>
+            <h3 data-en="Vibrant Food &amp; Culture" data-fr="Gastronomie &amp; Culture Vivante">Vibrant Food &amp; Culture</h3>
+            <p data-en="A true gastronomic city. Ghanaian cuisine, Lebanese, Indian, European — and a weekend brunch culture that rivals any major city. If you love good food, you will not be disappointed." data-fr="Une vraie ville gastronomique. Cuisine ghanéenne, libanaise, indienne, européenne — et une culture brunch du week-end qui rivalise avec n'importe quelle grande ville.">A true gastronomic city. Ghanaian cuisine, Lebanese, Indian, European — and a weekend brunch culture that rivals any major city. If you love good food, you will not be disappointed.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facts band -->
+      <div class="facts-band reveal">
+        <div class="facts-header">
+          <h3 data-en="Accra at a Glance" data-fr="Accra en Bref">Accra at a Glance</h3>
+        </div>
+        <div class="facts-grid">
+          <div class="fact-cell">
+            <div class="fact-label" data-en="Population" data-fr="Population">Population</div>
+            <div class="fact-val" data-en="~3 Million" data-fr="~3 Millions">~3 Million</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label" data-en="Official Language" data-fr="Langue Officielle">Official Language</div>
+            <div class="fact-val" data-en="English" data-fr="Anglais">English</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label" data-en="Currency" data-fr="Monnaie">Currency</div>
+            <div class="fact-val">GHS / USD</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label" data-en="Flight from Abidjan" data-fr="Vol depuis Abidjan">Flight from Abidjan</div>
+            <div class="fact-val" data-en="45 minutes" data-fr="45 minutes">45 minutes</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label" data-en="Time Zone" data-fr="Fuseau Horaire">Time Zone</div>
+            <div class="fact-val">GMT +0</div>
+          </div>
+          <div class="fact-cell">
+            <div class="fact-label" data-en="Climate" data-fr="Climat">Climate</div>
+            <div class="fact-val" data-en="Tropical" data-fr="Tropical">Tropical</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-head light">
+        <div class="section-overline light" data-en="What We Do" data-fr="Ce Que Nous Faisons">What We Do</div>
+        <h2 data-en="Your Complete Ghana Partner" data-fr="Votre Partenaire Complet au Ghana">Your Complete Ghana Partner</h2>
+        <p class="section-intro light" data-en="From your first question to long after you have settled — we are with you at every step." data-fr="De votre première question jusqu'à bien après votre installation — nous sommes avec vous à chaque étape.">From your first question to long after you have settled — we are with you at every step.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="svc-img">
+            <img src="images/11.jpg" alt="Discovery Stay" /> 
+            <div class="img-ph ph-orange-dark"></div>
+            <div class="svc-badge" data-en="Most Popular" data-fr="Plus Populaire">Most Popular</div>
+          </div>
+          <div class="svc-body">
+            <span class="svc-num">01</span>
+            <h3 data-en="Discovery Stay" data-fr="Séjour Découverte">Discovery Stay</h3>
+            <p data-en="A structured 4-day Accra experience — accommodation, neighbourhood tours, restaurant visits, school visits and market orientation. Standard or Premium formula." data-fr="Une expérience Accra structurée de 4 jours — hébergement, visites de quartiers, restaurants, écoles et orientation au marché. Formule Standard ou Premium.">A structured 4-day Accra experience — accommodation, neighbourhood tours, restaurant visits, school visits and market orientation. Standard or Premium formula.</p>
+            <a href="#contact" class="svc-link">
+              <span data-en="Book a Stay" data-fr="Réserver">Book a Stay</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="svc-img">
+            <img src="images/houseeee.jpg" alt="Full Relocation" />
+            <div class="img-ph ph-teal"></div>
+          </div>
+          <div class="svc-body">
+            <span class="svc-num">02</span>
+            <h3 data-en="Full Relocation" data-fr="Relocalisation Complète">Full Relocation</h3>
+            <p data-en="Complete support for families settling in Ghana — housing search, school enrolment, administrative procedures, and local integration. We handle everything." data-fr="Accompagnement complet pour les familles qui s'installent au Ghana — recherche de logement, inscription scolaire, démarches administratives et intégration locale.">Complete support for families settling in Ghana — housing search, school enrolment, administrative procedures, and local integration. We handle everything.</p>
+            <a href="#contact" class="svc-link">
+              <span data-en="Start Relocating" data-fr="Commencer">Start Relocating</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="svc-img">
+            <img src="images/real inv.jpg" alt="Real Estate Investment" />
+            <div class="img-ph ph-navy"></div>
+          </div>
+          <div class="svc-body">
+            <span class="svc-num">03</span>
+            <h3 data-en="Real Estate Investment" data-fr="Investissement Immobilier">Real Estate Investment</h3>
+            <p data-en="Property search, due diligence, title verification, negotiation and closing. We connect you with certified developers and deliver yields of 8–12% in prime zones." data-fr="Recherche de biens, due diligence, vérification des titres, négociation et finalisation. Nous vous connectons avec des promoteurs certifiés pour des rendements de 8 à 12%.">Property search, due diligence, title verification, negotiation and closing. We connect you with certified developers and deliver yields of 8–12% in prime zones.</p>
+            <a href="#contact" class="svc-link">
+              <span data-en="Invest Now" data-fr="Investir">Invest Now</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="svc-img">
+            <img src="images/property mng.jpg" alt="Property Management" />
+            <div class="img-ph ph-slate"></div>
+          </div>
+          <div class="svc-body">
+            <span class="svc-num">04</span>
+            <h3 data-en="Property Management" data-fr="Gestion Locative">Property Management</h3>
+            <p data-en="We manage your Accra property while you are abroad — tenant sourcing, rent collection, maintenance and regular updates. Total peace of mind." data-fr="Nous gérons votre bien immobilier à Accra pendant votre absence — recherche de locataires, collecte de loyers, maintenance et mises à jour régulières.">We manage your Accra property while you are abroad — tenant sourcing, rent collection, maintenance and regular updates. Total peace of mind.</p>
+            <a href="#contact" class="svc-link">
+              <span data-en="Manage My Property" data-fr="Gérer Mon Bien">Manage My Property</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Process strip -->
+      <div class="process-strip reveal">
+        <p class="process-title" data-en="How It Works" data-fr="Comment Ça Marche">How It Works</p>
+        <div class="process-row">
+          <div class="proc-step">
+            <div class="proc-circle">1</div>
+            <div class="proc-label" data-en="Discovery Call" data-fr="Appel Découverte">Discovery Call</div>
+          </div>
+          <div class="proc-line"></div>
+          <div class="proc-step">
+            <div class="proc-circle">2</div>
+            <div class="proc-label" data-en="Custom Plan" data-fr="Plan Sur Mesure">Custom Plan</div>
+          </div>
+          <div class="proc-line"></div>
+          <div class="proc-step">
+            <div class="proc-circle">3</div>
+            <div class="proc-label" data-en="Due Diligence" data-fr="Vérification">Due Diligence</div>
+          </div>
+          <div class="proc-line"></div>
+          <div class="proc-step">
+            <div class="proc-circle">4</div>
+            <div class="proc-label" data-en="Move In" data-fr="Emménagement">Move In</div>
+          </div>
+          <div class="proc-line"></div>
+          <div class="proc-step">
+            <div class="proc-circle">5</div>
+            <div class="proc-label" data-en="Ongoing Support" data-fr="Suivi Continu">Ongoing Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       NEIGHBOURHOODS
+  ============================================================ -->
+  <section class="section hoods-section" id="neighbourhoods">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-overline" data-en="Where to Live" data-fr="Où Vivre">Where to Live</div>
+        <h2 data-en="Accra's Finest Neighbourhoods" data-fr="Les Meilleurs Quartiers d'Accra">Accra's Finest Neighbourhoods</h2>
+        <p class="section-intro" data-en="Accra is a city of neighbourhoods. Each has its own character, population profile and price range. Here is what you need to know." data-fr="Accra est une ville de quartiers. Chacun a son caractère, son profil de population et son niveau de prix. Voici ce que vous devez savoir.">Accra is a city of neighbourhoods. Each has its own character, population profile and price range. Here is what you need to know.</p>
+      </div>
+
+      <div class="hoods-grid">
+
+        <div class="hood-card reveal">
+          <div class="hood-img">
+            <img src="images/East-Legon.jpg" alt="East Legon" /> 
+            <div class="img-ph ph-orange"></div>
+            <div class="hood-flag top" data-en="Expat Favourite" data-fr="Favori Expatriés">Expat Favourite</div>
+          </div>
+          <div class="hood-body">
+            <h3>East Legon</h3>
+            <p data-en="Upscale residential with international schools, restaurants, shopping centres and strong security. Where most expat families choose to live." data-fr="Résidentiel haut de gamme avec écoles internationales, restaurants, centres commerciaux et forte sécurité. Là où vivent la plupart des familles expatriées.">Upscale residential with international schools, restaurants, shopping centres and strong security. Where most expat families choose to live.</p>
+            <div class="hood-price-row">
+              <span class="hood-price-from" data-en="Studio from" data-fr="Studio dès">Studio from</span>
+              <span class="hood-price-val">300,000 <span class="hood-price-unit">FCFA<span data-en="/mo" data-fr="/mois">/mo</span></span></span>
+            </div>
+            <div class="hood-attrs">
+              <span data-en="Schools" data-fr="Écoles">Schools</span>
+              <span data-en="Shopping" data-fr="Shopping">Shopping</span>
+              <span data-en="Secure" data-fr="Sécurisé">Secure</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hood-card reveal">
+          <div class="hood-img">
+            <img src="images/airport.jpg" alt="Airport Residential" />
+            <div class="img-ph ph-teal-dark"></div>
+            <div class="hood-flag" data-en="Diplomatic" data-fr="Diplomatique">Diplomatic</div>
+          </div>
+          <div class="hood-body">
+            <h3 data-en="Airport Residential" data-fr="Airport Residential">Airport Residential</h3>
+            <p data-en="Diplomatic and business district close to the airport. Premium housing with a very international atmosphere. Ideal for executives." data-fr="Quartier diplomatique et d'affaires proche de l'aéroport. Logements premium avec une atmosphère très internationale. Idéal pour les cadres.">Diplomatic and business district close to the airport. Premium housing with a very international atmosphere. Ideal for executives.</p>
+            <div class="hood-price-row">
+              <span class="hood-price-from" data-en="Apartment from" data-fr="Appartement dès">Apartment from</span>
+              <span class="hood-price-val">300,000 <span class="hood-price-unit">FCFA<span data-en="/mo" data-fr="/mois">/mo</span></span></span>
+            </div>
+            <div class="hood-attrs">
+              <span data-en="Business" data-fr="Business">Business</span>
+              <span data-en="Premium" data-fr="Premium">Premium</span>
+              <span data-en="International" data-fr="International">International</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hood-card reveal">
+          <div class="hood-img">
+            <img src="images/cantoments.jpeg" alt="Cantonments" />
+            <div class="img-ph ph-navy"></div>
+            <div class="hood-flag" data-en="Embassies" data-fr="Ambassades">Embassies</div>
+          </div>
+          <div class="hood-body">
+            <h3>Cantonments</h3>
+            <p data-en="Embassy and institutional district. Calm, secure and well-maintained. Perfect for families seeking tranquility with easy access to the city centre." data-fr="Quartier des ambassades et des institutions. Calme, sécurisé et bien entretenu. Parfait pour les familles cherchant la tranquillité près du centre.">Embassy and institutional district. Calm, secure and well-maintained. Perfect for families seeking tranquility with easy access to the city centre.</p>
+            <div class="hood-price-row">
+              <span class="hood-price-from" data-en="Villa from" data-fr="Villa dès">Villa from</span>
+              <span class="hood-price-val">1,500,000 <span class="hood-price-unit">FCFA<span data-en="/mo" data-fr="/mois">/mo</span></span></span>
+            </div>
+            <div class="hood-attrs">
+              <span data-en="Calm" data-fr="Calme">Calm</span>
+              <span data-en="Embassies" data-fr="Ambassades">Embassies</span>
+              <span data-en="Prestigious" data-fr="Prestigieux">Prestigious</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hood-card reveal">
+          <div class="hood-img">
+            <img src="images/osu.jpg" alt="Osu" />
+            <div class="img-ph ph-orange-teal"></div>
+            <div class="hood-flag vibrant" data-en="Vibrant" data-fr="Animé">Vibrant</div>
+          </div>
+          <div class="hood-body">
+            <h3>Osu</h3>
+            <p data-en="Accra's most lively neighbourhood. Restaurants, bars, nightlife and boutiques along Oxford Street. The cultural heartbeat of the city." data-fr="Le quartier le plus animé d'Accra. Restaurants, bars, vie nocturne et boutiques sur Oxford Street. Le cœur culturel de la ville.">Accra's most lively neighbourhood. Restaurants, bars, nightlife and boutiques along Oxford Street. The cultural heartbeat of the city.</p>
+            <div class="hood-price-row">
+              <span class="hood-price-from" data-en="Apartment from" data-fr="Appartement dès">Apartment from</span>
+              <span class="hood-price-val">250,000 <span class="hood-price-unit">FCFA<span data-en="/mo" data-fr="/mois">/mo</span></span></span>
+            </div>
+            <div class="hood-attrs">
+              <span data-en="Nightlife" data-fr="Vie Nocturne">Nightlife</span>
+              <span data-en="Restaurants" data-fr="Restaurants">Restaurants</span>
+              <span data-en="Central" data-fr="Central">Central</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hood-card reveal">
+          <div class="hood-img">
+            <img src="images/oyarifa.jpg" alt="Oyarifa" />
+            <div class="img-ph ph-teal"></div>
+            <div class="hood-flag new" data-en="New Development" data-fr="Nouveau Développement">New Development</div>
+          </div>
+          <div class="hood-body">
+            <h3>Oyarifa</h3>
+            <p data-en="New gated residential developments — the future of Accra. Modern, secure communities with pools, playgrounds and 24/7 security. Excellent investment potential." data-fr="Nouveaux développements résidentiels fermés — le futur d'Accra. Communautés modernes et sécurisées avec piscines, aires de jeux et sécurité 24h/24.">New gated residential developments — the future of Accra. Modern, secure communities with pools, playgrounds and 24/7 security. Excellent investment potential.</p>
+            <div class="hood-price-row">
+              <span class="hood-price-from" data-en="House from" data-fr="Maison dès">House from</span>
+              <span class="hood-price-val">250,000 <span class="hood-price-unit">FCFA<span data-en="/mo" data-fr="/mois">/mo</span></span></span>
+            </div>
+            <div class="hood-attrs">
+              <span data-en="Gated" data-fr="Fermé">Gated</span>
+              <span data-en="Modern" data-fr="Moderne">Modern</span>
+              <span data-en="Investment" data-fr="Investissement">Investment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hood-card reveal">
+          <div class="hood-img">
+            <img src="images/tema.jpg" alt="Tema" />
+            <div class="img-ph ph-slate"></div>
+            <div class="hood-flag value" data-en="Best Value" data-fr="Meilleur Rapport">Best Value</div>
+          </div>
+          <div class="hood-body">
+            <h3>Tema</h3>
+            <p data-en="Satellite city with excellent value. Quick access to the port and industrial zones. Ideal for business-focused residents and budget-conscious investors." data-fr="Ville satellite avec un excellent rapport qualité-prix. Accès rapide au port et aux zones industrielles. Idéal pour les résidents axés affaires.">Satellite city with excellent value. Quick access to the port and industrial zones. Ideal for business-focused residents and budget-conscious investors.</p>
+            <div class="hood-price-row">
+              <span class="hood-price-from" data-en="From" data-fr="Dès">From</span>
+              <span class="hood-price-val">60,000 <span class="hood-price-unit">FCFA<span data-en="/mo" data-fr="/mois">/mo</span></span></span>
+            </div>
+            <div class="hood-attrs">
+              <span data-en="Affordable" data-fr="Abordable">Affordable</span>
+              <span data-en="Port Access" data-fr="Accès Port">Port Access</span>
+              <span data-en="Industrial" data-fr="Industriel">Industrial</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       DISCOVERY STAY
+  ============================================================ -->
+  <section class="section discovery-section" id="discovery">
+    <div class="container">
+      <div class="discovery-layout">
+
+        <div class="disc-images reveal">
+          <div class="disc-grid">
+            <div class="disc-img-main">
+              <img src="images/61.jpeg" alt="Discovery stay" /> 
+              <div class="img-ph ph-orange-teal"></div>
+            </div>
+            <div class="disc-img-sm top">
+              <img src="images/39.jpeg" alt="Accra restaurant" /> 
+              <div class="img-ph ph-teal-dark"></div>
+            </div>
+            <div class="disc-img-sm bottom">
+              <img src="images/32.jpeg" alt="East Legon market" /> 
+              <div class="img-ph ph-navy"></div>
+            </div>
+          </div>
+          <div class="disc-stat-badge">
+            <span class="dsb-num" data-en="4 Days" data-fr="4 Jours">4 Days</span>
+            <span class="dsb-label" data-en="Full Accra Immersion" data-fr="Immersion Complète">Full Accra Immersion</span>
+          </div>
+        </div>
+
+        <div class="disc-text reveal">
+          <div class="section-overline" data-en="Signature Offer" data-fr="Offre Phare">Signature Offer</div>
+          <h2 data-en="The Accra Discovery Stay" data-fr="Le Séjour Découverte Accra">The Accra Discovery Stay</h2>
+          <p data-en="Not sure if Accra is right for you? Come and see for yourself. We design a structured 4-day immersion — accommodation, guided neighbourhood tours, school visits, restaurant experiences and real estate viewings. You leave with complete clarity." data-fr="Pas sûr qu'Accra vous convienne ? Venez le voir par vous-même. Nous concevons une immersion structurée de 4 jours — hébergement, visites guidées de quartiers, visites d'écoles, expériences gastronomiques et visites immobilières.">Not sure if Accra is right for you? Come and see for yourself. We design a structured 4-day immersion — accommodation, guided neighbourhood tours, school visits, restaurant experiences and real estate viewings. You leave with complete clarity.</p>
+
+          <ul class="disc-includes">
+            <li><span class="inc-mark"></span><span data-en="Airport pickup and transfer" data-fr="Transfert aéroport">Airport pickup and transfer</span></li>
+            <li><span class="inc-mark"></span><span data-en="Curated accommodation" data-fr="Hébergement curé">Curated accommodation</span></li>
+            <li><span class="inc-mark"></span><span data-en="Guided neighbourhood tours" data-fr="Visites guidées de quartiers">Guided neighbourhood tours</span></li>
+            <li><span class="inc-mark"></span><span data-en="School and market visits" data-fr="Visites écoles et marché">School and market visits</span></li>
+            <li><span class="inc-mark"></span><span data-en="Property viewings" data-fr="Visites immobilières">Property viewings</span></li>
+            <li><span class="inc-mark"></span><span data-en="Full FR / EN bilingual support" data-fr="Support bilingue FR / AN">Full FR / EN bilingual support</span></li>
+          </ul>
+
+          <div class="disc-packages">
+            <div class="disc-pkg">
+              <div class="pkg-name" data-en="Standard" data-fr="Standard">Standard</div>
+              <div class="pkg-desc" data-en="Solo travellers and couples" data-fr="Voyageurs solos et couples">Solo travellers and couples</div>
+            </div>
+            <div class="disc-pkg featured">
+              <div class="pkg-feat-label" data-en="Recommended" data-fr="Recommandé">Recommended</div>
+              <div class="pkg-name" data-en="Premium" data-fr="Premium">Premium</div>
+              <div class="pkg-desc" data-en="Families relocating to Ghana" data-fr="Familles s'installant au Ghana">Families relocating to Ghana</div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary" data-en="Book Your Discovery Stay" data-fr="Réserver Votre Séjour">Book Your Discovery Stay</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       COST OF LIVING
+  ============================================================ -->
+  <section class="section costs-section" id="costs">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-overline" data-en="Real Numbers" data-fr="Chiffres Réels">Real Numbers</div>
+        <h2 data-en="The Cost of Living in Accra" data-fr="Le Coût de la Vie à Accra">The Cost of Living in Accra</h2>
+        <p class="section-intro" data-en="The cost of living in Accra depends entirely on how you choose to live. Here are real, unfiltered numbers." data-fr="Le coût de la vie à Accra dépend entièrement de la façon dont vous choisissez de vivre. Voici des chiffres réels, sans filtre.">The cost of living in Accra depends entirely on how you choose to live. Here are real, unfiltered numbers.</p>
+      </div>
+
+      <div class="costs-layout">
+        <div class="costs-left reveal">
+          <h3 class="costs-subtitle" data-en="Monthly Rents (FCFA)" data-fr="Loyers Mensuels (FCFA)">Monthly Rents (FCFA)</h3>
+          <table class="rent-table">
+            <thead>
+              <tr>
+                <th data-en="Location" data-fr="Emplacement">Location</th>
+                <th data-en="Type" data-fr="Type">Type</th>
+                <th data-en="Per Month" data-fr="Par Mois">Per Month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>East Legon</td><td data-en="Studio" data-fr="Studio">Studio</td><td class="td-price">300,000+</td></tr>
+              <tr><td>East Legon</td><td data-en="2 Bedrooms" data-fr="2 Chambres">2 Bedrooms</td><td class="td-price">380,000–450,000</td></tr>
+              <tr><td>East Legon</td><td data-en="Large House" data-fr="Grande Maison">Large House</td><td class="td-price">1,500,000–2,400,000</td></tr>
+              <tr><td>Airport / Cantonments</td><td data-en="Apartment" data-fr="Appartement">Apartment</td><td class="td-price">300,000–1,500,000</td></tr>
+              <tr><td>Airport / Cantonments</td><td data-en="Villa" data-fr="Villa">Villa</td><td class="td-price">3,000,000+</td></tr>
+              <tr><td>Tema</td><td data-en="Various" data-fr="Divers">Various</td><td class="td-price">60,000–400,000</td></tr>
+              <tr><td>Oyarifa</td><td data-en="Residence" data-fr="Résidence">Residence</td><td class="td-price">650,000–2,100,000</td></tr>
+              <tr><td>Oyarifa</td><td data-en="House" data-fr="Maison">House</td><td class="td-price">250,000–400,000</td></tr>
+            </tbody>
+          </table>
+          <div class="rent-note" data-en="Rents are often paid 6 months to 1 year in advance in Ghana. Plan this cash flow before arriving." data-fr="Les loyers se paient souvent 6 mois ou 1 an en avance au Ghana. Prévoyez cette trésorerie avant d'arriver.">Rents are often paid 6 months to 1 year in advance in Ghana. Plan this cash flow before arriving.</div>
+        </div>
+
+        <div class="costs-right reveal">
+          <h3 class="costs-subtitle" data-en="Practical Notes" data-fr="Notes Pratiques">Practical Notes</h3>
+          <div class="tip-item">
+            <div class="tip-title" data-en="Eat local first" data-fr="Mangez local d'abord">Eat local first</div>
+            <p data-en="A Ghanaian can live comfortably on roughly 150,000 FCFA per month. Imported products are expensive — a baguette costs 1,000 FCFA versus 200 FCFA at home." data-fr="Un Ghanéen peut vivre confortablement avec environ 150 000 FCFA/mois. Les produits importés sont chers — une baguette coûte 1 000 FCFA contre 200 FCFA chez vous.">A Ghanaian can live comfortably on roughly 150,000 FCFA per month. Imported products are expensive — a baguette costs 1,000 FCFA versus 200 FCFA at home.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-title" data-en="Health insurance" data-fr="Assurance santé">Health insurance</div>
+            <p data-en="Private facilities offer good care. An international health insurance policy is strongly recommended before arriving in Ghana." data-fr="Les structures privées offrent de bons soins. Une assurance santé internationale est fortement recommandée avant d'arriver au Ghana.">Private facilities offer good care. An international health insurance policy is strongly recommended before arriving in Ghana.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-title" data-en="Connectivity" data-fr="Connectivité">Connectivity</div>
+            <p data-en="Mobile coverage is excellent. Buy a local SIM at the airport on arrival. Fibre optic internet is available in most residential neighbourhoods." data-fr="La couverture mobile est excellente. Achetez une SIM locale à l'aéroport dès l'arrivée. La fibre optique est disponible dans la plupart des quartiers résidentiels.">Mobile coverage is excellent. Buy a local SIM at the airport on arrival. Fibre optic internet is available in most residential neighbourhoods.</p>
+          </div>
+          <div class="tip-item">
+            <div class="tip-title" data-en="International schools" data-fr="Écoles internationales">International schools</div>
+            <p data-en="Lycée Français d'Accra (French curriculum), Lincoln Community School (American / IB), British International School, SOS Hermann Gmeiner. Your children will adapt very well." data-fr="Lycée Français d'Accra (programme français), Lincoln Community School (américain / IB), British International School, SOS Hermann Gmeiner. Vos enfants s'adapteront très bien.">Lycée Français d'Accra (French curriculum), Lincoln Community School (American / IB), British International School, SOS Hermann Gmeiner. Your children will adapt very well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="section testi-section" id="testimonials">
+    <div class="container">
+      <div class="section-head light">
+        <div class="section-overline light" data-en="Client Stories" data-fr="Témoignages">Client Stories</div>
+        <h2 data-en="What Our Clients Say" data-fr="Ce Que Disent Nos Clients">What Our Clients Say</h2>
+      </div>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-open">&ldquo;</div>
+          <p data-en="Carole's bilingual support was transformative. She found me a modern home in East Legon, handled all the paperwork, and I relocated completely stress-free." data-fr="Le soutien bilingue de Carole a tout transformé. Elle m'a trouvé une maison moderne à East Legon, s'est occupée de tous les papiers et j'ai déménagé sans aucun stress.">"Carole's bilingual support was transformative. She found me a modern home in East Legon, handled all the paperwork, and I relocated completely stress-free."</p>
+          <div class="testi-foot">
+            <div class="testi-initials">A.B</div>
+            <div>
+              <div class="testi-name">A.B.</div>
+              <div class="testi-origin">Paris, France</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-open">&ldquo;</div>
+          <p data-en="I now own a rental property in Accra, fully managed by Abrico Realty — with zero stress from abroad. The rental yield exceeded my expectations entirely." data-fr="Je possède désormais un bien locatif à Accra, entièrement géré par Abrico Realty — sans aucun stress depuis l'étranger. Le rendement locatif a largement dépassé mes attentes.">"I now own a rental property in Accra, fully managed by Abrico Realty — with zero stress from abroad. The rental yield exceeded my expectations entirely."</p>
+          <div class="testi-foot">
+            <div class="testi-initials">M.K</div>
+            <div>
+              <div class="testi-name">M.K.</div>
+              <div class="testi-origin">Montréal, Canada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-open">&ldquo;</div>
+          <p data-en="Professional, transparent, and truly bilingual. Carole helped my entire family relocate smoothly from Cotonou to Accra in just eight weeks." data-fr="Professionnelle, transparente et véritablement bilingue. Carole a aidé toute ma famille à s'installer en douceur de Cotonou à Accra en seulement huit semaines.">"Professional, transparent, and truly bilingual. Carole helped my entire family relocate smoothly from Cotonou to Accra in just eight weeks."</p>
+          <div class="testi-foot">
+            <div class="testi-initials">JP</div>
+            <div>
+              <div class="testi-name">Jean-Pierre M.</div>
+              <div class="testi-origin">Cotonou, Benin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       INVESTMENT
+  ============================================================ -->
+  <section class="section invest-section" id="invest">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-overline" data-en="Invest in Ghana" data-fr="Investir au Ghana">Invest in Ghana</div>
+        <h2 data-en="Real Estate Investment, Simplified" data-fr="L'Investissement Immobilier Simplifié">Real Estate Investment, Simplified</h2>
+      </div>
+
+      <div class="invest-grid">
+        <div class="invest-card reveal">
+          <div class="invest-num">01</div>
+          <h3 data-en="Leasehold &amp; Freehold" data-fr="Leasehold &amp; Freehold">Leasehold &amp; Freehold</h3>
+          <p data-en="In Ghana, land traditionally belongs to chiefs or the State. Most transactions are leasehold — long-term leases of 50 to 99 years. It is legal, secure and common practice." data-fr="Au Ghana, la terre appartient traditionnellement aux chefs ou à l'État. La plupart des transactions se font en leasehold — un bail à long terme de 50 à 99 ans. C'est légal, sécurisé et courant.">In Ghana, land traditionally belongs to chiefs or the State. Most transactions are leasehold — long-term leases of 50 to 99 years. It is legal, secure and common practice.</p>
+        </div>
+        <div class="invest-card reveal">
+          <div class="invest-num">02</div>
+          <h3 data-en="Due Diligence" data-fr="Due Diligence">Due Diligence</h3>
+          <p data-en="Always verify the land title before any purchase. Land disputes exist. Professional guidance avoids the classic pitfalls — we handle this entirely on your behalf." data-fr="Vérifiez toujours le titre foncier avant tout achat. Les litiges fonciers existent. Un accompagnement professionnel évite les pièges classiques — nous nous en chargeons entièrement.">Always verify the land title before any purchase. Land disputes exist. Professional guidance avoids the classic pitfalls — we handle this entirely on your behalf.</p>
+        </div>
+        <div class="invest-card reveal">
+          <div class="invest-num">03</div>
+          <h3 data-en="Strong Rental Yields" data-fr="Forts Rendements Locatifs">Strong Rental Yields</h3>
+          <p data-en="Gross yields of 8 to 12% in well-chosen areas. Expat rental demand is strong and constant in Accra. We identify the best zones and connect you with certified developers." data-fr="Rendements bruts de 8 à 12% dans les zones bien choisies. La demande locative expatriée est forte et constante à Accra. Nous identifions les meilleures zones.">Gross yields of 8 to 12% in well-chosen areas. Expat rental demand is strong and constant in Accra. We identify the best zones and connect you with certified developers.</p>
+        </div>
+      </div>
+
+      <div class="corridors-block reveal">
+        <h3 data-en="Accra's 5 Growth Corridors" data-fr="Les 5 Corridors de Croissance d'Accra">Accra's 5 Growth Corridors</h3>
+        <p data-en="Accra is expanding along five major residential corridors, driven by new developments, improved roads and growing demand for modern housing." data-fr="Accra s'étend le long de cinq grands corridors résidentiels, portés par de nouveaux projets, des routes améliorées et une demande croissante de logements modernes.">Accra is expanding along five major residential corridors, driven by new developments, improved roads and growing demand for modern housing.</p>
+        <div class="corridors-row">
+          <div class="corridor-pill"><span class="cpill-n">1</span><span>Adenta · Oyarifa · Aburi</span></div>
+          <div class="corridor-pill"><span class="cpill-n">2</span><span>East Legon · East Legon Hills · Oyibi</span></div>
+          <div class="corridor-pill"><span class="cpill-n">3</span><span>Achimota · Pokuase · Amasaman</span></div>
+          <div class="corridor-pill"><span class="cpill-n">4</span><span>Adenta · Lakeside · Borteyman</span></div>
+          <div class="corridor-pill"><span class="cpill-n">5</span><span>Tema · Community 25 · Prampram</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="contact-left reveal">
+          <div class="section-overline light" data-en="Get in Touch" data-fr="Nous Contacter">Get in Touch</div>
+          <h2 data-en="Start Your Ghana Journey" data-fr="Commencez Votre Aventure Ghanéenne">Start Your Ghana Journey</h2>
+          <p data-en="No obligation. Your first call is free. We will listen, understand your goals and show you exactly what is possible in Accra." data-fr="Sans engagement. Votre premier appel est gratuit. Nous écouterons, comprendrons vos objectifs et vous montrerons exactement ce qui est possible à Accra.">No obligation. Your first call is free. We will listen, understand your goals and show you exactly what is possible in Accra.</p>
+
+          <div class="contact-info-list">
+            <div class="ci-row">
+              <div class="ci-dot"></div>
+              <div>
+                <div class="ci-label" data-en="Phone" data-fr="Téléphone">Phone</div>
+                <div class="ci-val">+233 24 674 6234</div>
+              </div>
+            </div>
+            <div class="ci-row">
+              <div class="ci-dot"></div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-val">info@abricorealty.com</div>
+              </div>
+            </div>
+            <div class="ci-row">
+              <div class="ci-dot"></div>
+              <div>
+                <div class="ci-label" data-en="Address" data-fr="Adresse">Address</div>
+                <div class="ci-val" data-en="Atlantic Tower, Office 625, Liberation Road, Accra" data-fr="Atlantic Tower, Bureau 625, Liberation Road, Accra">Atlantic Tower, Office 625, Liberation Road, Accra</div>
+              </div>
+            </div>
+            <div class="ci-row">
+              <div class="ci-dot"></div>
+              <div>
+                <div class="ci-label">Web</div>
+                <div class="ci-val">www.abricorealty.com</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-btn-stack">
+            <a href="https://calendly.com/abricorealty/clarity-call" target="_blank" class="btn-primary" data-en="Book a Free Call" data-fr="Réserver un Appel Gratuit">Book a Free Call</a>
+            <a href="https://wa.me/233246746234" target="_blank" class="btn-wa">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span data-en="WhatsApp Us" data-fr="WhatsApp">WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3 data-en="Send a Message" data-fr="Envoyer un Message">Send a Message</h3>
+            <div class="form-row">
+              <div class="f-group">
+                <label data-en="Full Name" data-fr="Nom Complet">Full Name</label>
+                <input type="text" name="name" required placeholder="Jean-Baptiste Koné" />
+              </div>
+              <div class="f-group">
+                <label>Email</label>
+                <input type="email" name="email" required placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class="f-group">
+              <label data-en="Phone / WhatsApp" data-fr="Téléphone / WhatsApp">Phone / WhatsApp</label>
+              <input type="tel" name="phone" placeholder="+225 XX XX XX XX" />
+            </div>
+            <div class="f-group">
+              <label data-en="I am interested in" data-fr="Je suis intéressé(e) par">I am interested in</label>
+              <select name="interest">
+                <option value="" data-en="Select a service" data-fr="Choisir un service">Select a service</option>
+                <option value="discovery"  data-en="Discovery Stay (4 days)"     data-fr="Séjour Découverte (4 jours)">Discovery Stay (4 days)</option>
+                <option value="relocation" data-en="Full Relocation"             data-fr="Relocalisation Complète">Full Relocation</option>
+                <option value="invest"     data-en="Real Estate Investment"      data-fr="Investissement Immobilier">Real Estate Investment</option>
+                <option value="manage"     data-en="Property Management"         data-fr="Gestion Locative">Property Management</option>
+                <option value="info"       data-en="General Information"         data-fr="Information Générale">General Information</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label data-en="Your Message" data-fr="Votre Message">Your Message</label>
+              <textarea name="message" rows="4"
+                data-en-placeholder="Tell us about your project, timeline and any questions..."
+                data-fr-placeholder="Parlez-nous de votre projet, votre calendrier et vos questions..."
+                placeholder="Tell us about your project, timeline and any questions..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full" id="submitBtn">
+              <span data-en="Send Message" data-fr="Envoyer">Send Message</span>
+            </button>
+            <p class="form-note" data-en="We respond within 24 hours. First consultation is free." data-fr="Nous répondons sous 24 heures. Première consultation gratuite.">We respond within 24 hours. First consultation is free.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <!-- INSERT YOUR LOGO: same file as the navbar -->
+            <img src="images/Abrico Realty.png" alt="Abrico Realty" class="footer-logo-img" />
+          </div>
+          <p data-en="Your trusted bilingual partner for real estate, relocation and curated living in Accra, Ghana." data-fr="Votre partenaire bilingue de confiance pour l'immobilier, la relocalisation et la vie à Accra, Ghana.">Your trusted bilingual partner for real estate, relocation and curated living in Accra, Ghana.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/carole-k-abricorealty-realestateexpert" target="_blank" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/61567039561400" target="_blank" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.me/233246746234" target="_blank" aria-label="WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-en="Services" data-fr="Services">Services</h4>
+          <ul>
+            <li><a href="#discovery"      data-en="Discovery Stay"           data-fr="Séjour Découverte">Discovery Stay</a></li>
+            <li><a href="#services"       data-en="Full Relocation"          data-fr="Relocalisation Complète">Full Relocation</a></li>
+            <li><a href="#services"       data-en="Real Estate Investment"   data-fr="Investissement Immobilier">Real Estate Investment</a></li>
+            <li><a href="#services"       data-en="Property Management"      data-fr="Gestion Locative">Property Management</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-en="Accra Guide" data-fr="Guide Accra">Accra Guide</h4>
+          <ul>
+            <li><a href="#neighbourhoods" data-en="Neighbourhoods"  data-fr="Quartiers">Neighbourhoods</a></li>
+            <li><a href="#costs"          data-en="Cost of Living"  data-fr="Coût de la Vie">Cost of Living</a></li>
+            <li><a href="#accra-guide"    data-en="Why Accra"       data-fr="Pourquoi Accra">Why Accra</a></li>
+            <li><a href="#invest"         data-en="Invest in Ghana" data-fr="Investir au Ghana">Invest in Ghana</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-en="Contact" data-fr="Contact">Contact</h4>
+          <ul>
+            <li><span>+233 24 674 6234</span></li>
+            <li><span>info@abricorealty.com</span></li>
+            <li><span data-en="Atlantic Tower, Accra" data-fr="Atlantic Tower, Accra">Atlantic Tower, Accra</span></li>
+            <li><a href="https://calendly.com/abricorealty/clarity-call" target="_blank" data-en="Book a Free Call" data-fr="Appel Gratuit">Book a Free Call</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p data-en="© 2025 Abrico Realty. All rights reserved." data-fr="© 2025 Abrico Realty. Tous droits réservés.">© 2025 Abrico Realty. All rights reserved.</p>
+        <p class="footer-motto" data-en="Accra is not a destination — it is an opportunity." data-fr="Accra n'est pas une destination — c'est une opportunité.">Accra is not a destination — it is an opportunity.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       FLOATING LANGUAGE TOGGLE
+  ============================================================ -->
+  <button class="lang-fab" id="langFab" aria-label="Toggle language">
+    <span class="lang-fab-globe">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.3"/><path d="M10 1.5C10 1.5 7 5 7 10s3 8.5 3 8.5M10 1.5C10 1.5 13 5 13 10s-3 8.5-3 8.5M1.5 10h17" stroke="currentColor" stroke-width="1.3"/></svg>
+    </span>
+    <span class="lang-fab-text" id="langFabText">FR</span>
+  </button>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/233246746234" target="_blank" class="wa-fab" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
